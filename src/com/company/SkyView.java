@@ -9,7 +9,7 @@ public SkyView (int numRows,int numCols,double[]scanned )
 {
     int i=0;
     view = new double[numRows][numCols];
-    for (int x = numRows;x<numRows;x++)
+    for (int x = 0;x<numRows;x++)
     {
         if (x%2 == 0)
         {
@@ -21,7 +21,7 @@ public SkyView (int numRows,int numCols,double[]scanned )
         }
         else
         {
-            for (int z=numCols;z>0;z--)
+            for (int z=numCols-1;z>=0;z--)
             {
                 view[x][z]= scanned[i];
                 i++;
